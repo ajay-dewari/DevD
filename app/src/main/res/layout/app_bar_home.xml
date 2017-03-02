@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ajaysinghdewari.devd.activities.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_225"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:titleEnabled="false"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <include layout="@layout/banner_content" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_40"
+                android:layout_margin="10dp"
+                app:layout_collapseMode="pin"
+                android:background="@drawable/shape_search_bar"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/music_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingRight="@dimen/standard_5"
+        android:paddingLeft="@dimen/standard_5"/>
+
+    <View
+        android:id="@+id/transparentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBGTransparent"
+        android:visibility="gone"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_23.5"
+        app:layout_anchor="@id/app_bar"
+        app:fabSize="mini"
+        app:layout_anchorGravity="bottom|end"
+        android:src="@drawable/ic_queue_music_white" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_23.5"
+        app:layout_anchor="@id/app_bar"
+        app:fabSize="mini"
+        app:layout_anchorGravity="bottom|end"
+        android:src="@drawable/ic_favourate_white" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_23.5"
+        app:layout_anchor="@id/app_bar"
+        app:fabSize="mini"
+        app:layout_anchorGravity="bottom|end"
+        android:src="@drawable/ic_play_arrow_white"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_15"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        android:src="@drawable/ic_play_arrow_white"/>
+
+</android.support.design.widget.CoordinatorLayout>

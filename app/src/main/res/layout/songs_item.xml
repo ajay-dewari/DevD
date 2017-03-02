@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/standard_80"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginLeft="@dimen/standard_5"
+    android:layout_marginTop="@dimen/standard_5"
+    android:layout_marginBottom="@dimen/standard_5">
+<FrameLayout
+    android:layout_width="@dimen/standard_65"
+    android:layout_height="@dimen/standard_65">
+    <com.ajaysinghdewari.devd.utils.CircleImageView
+        android:id="@+id/song_img"
+        android:layout_width="@dimen/standard_65"
+        android:layout_height="@dimen/standard_65"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/wall_three"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/favourateBtn"
+        android:layout_width="@dimen/standard_25"
+        android:layout_height="@dimen/standard_25"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_favourate_white"
+        android:tint="@color/colorAccent"/>
+
+</FrameLayout>
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorText"
+        android:singleLine="true"
+        android:textSize="@dimen/standard_14"/>
+
+    <TextView
+        android:id="@+id/song_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorText"
+        android:gravity="center_horizontal|top"
+        android:textSize="@dimen/standard_14"/>
+</LinearLayout>
