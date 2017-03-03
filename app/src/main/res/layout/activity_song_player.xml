@@ -103,6 +103,7 @@
             android:orientation="horizontal"
             android:layout_weight="4">
             <ImageView
+                android:id="@+id/btn_previous"
                 android:layout_width="@dimen/standard_55"
                 android:layout_height="@dimen/standard_55"
                 android:src="@drawable/ic_previous"/>

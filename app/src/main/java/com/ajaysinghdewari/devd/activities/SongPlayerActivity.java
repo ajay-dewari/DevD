@@ -7,13 +7,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.widget.ImageView;
 
 import com.ajaysinghdewari.devd.R;
 import com.ajaysinghdewari.devd.utils.BlurBuilder;
 
 public class SongPlayerActivity extends AppCompatActivity {
     public static final String IMG_BG="inage_bg";
-String mBgUri="";
+    String mBgUri="";
+    ImageView btn_previous;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
