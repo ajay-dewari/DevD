@@ -41,7 +41,7 @@
     android:layout_height="@dimen/standard_0"
     android:layout_weight="1"
     android:gravity="center"
-    android:singleLine="true"
+    android:maxLines="1"
     android:layout_marginLeft="@dimen/standard_15"
     android:layout_marginRight="@dimen/standard_15"/>
 
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/standard_0"
             android:layout_weight="1"
-            android:singleLine="true"
+            android:maxLines="1"
             android:gravity="center"
             android:layout_marginLeft="@dimen/standard_15"
             android:layout_marginRight="@dimen/standard_15"/>
@@ -74,6 +74,7 @@
                 android:id="@+id/time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
                 android:textColor="@color/colorText"
                 android:layout_alignParentLeft="true"
                 android:text="2:20"/>
@@ -81,16 +82,15 @@
                 android:id="@+id/seekBar"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_alignRight="@+id/time"
-                android:layout_marginLeft="@dimen/standard_8"
-                android:layout_marginRight="@dimen/standard_8"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/standard_25"
+                android:layout_marginRight="@dimen/standard_25"
                 />
             <TextView
                 android:id="@+id/remaintime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@+id/seekBar"
+                android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:textColor="@color/colorText"
                 android:text="2:20"/>
@@ -131,28 +131,38 @@
 
             <ImageView
                 android:layout_width="@dimen/standard_0"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_height="match_parent"
+                android:padding="@dimen/standard_15"
+                android:layout_weight="1"
+                android:src="@drawable/ic_repeat"/>
 
             <ImageView
                 android:layout_width="@dimen/standard_0"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_height="match_parent"
+                android:padding="@dimen/standard_15"
+                android:layout_weight="1"
+                android:src="@drawable/ic_shuffle"/>
 
             <ImageView
                 android:layout_width="@dimen/standard_0"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_height="match_parent"
+                android:padding="@dimen/standard_15"
+                android:layout_weight="1"
+                android:src="@drawable/ic_favourate_white"/>
 
             <ImageView
                 android:layout_width="@dimen/standard_0"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_height="match_parent"
+                android:padding="@dimen/standard_15"
+                android:layout_weight="1"
+                android:src="@drawable/ic_playlist_add"/>
 
             <ImageView
                 android:layout_width="@dimen/standard_0"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_height="match_parent"
+                android:padding="@dimen/standard_15"
+                android:layout_weight="1"
+                android:src="@drawable/ic_queue_music_white"/>
 
         </LinearLayout>
 
