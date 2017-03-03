@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ajaysinghdewari.devd.activities.SongPlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBGTransparent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_0"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/standard_10"
+            android:layout_marginRight="@dimen/standard_10"
+            android:background="@color/colorTransparent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/standard_5"
+                android:src="@drawable/ic_arrow_back" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/standard_5"
+                android:src="@drawable/ic_favourate_white" />
+        </RelativeLayout>
+<TextView
+    android:id="@+id/song_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/standard_0"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:singleLine="true"
+    android:layout_marginLeft="@dimen/standard_15"
+    android:layout_marginRight="@dimen/standard_15"/>
+
+        <TextView
+            android:id="@+id/song_artist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_0"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/standard_15"
+            android:layout_marginRight="@dimen/standard_15"/>
+<com.ajaysinghdewari.devd.utils.CircleImageView
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/standard_0"
+    android:layout_weight="8"
+    android:src="@drawable/wall_three"/>
+
+        <RelativeLayout
+            android:id="@+id/seekBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/standard_15"
+            android:paddingRight="@dimen/standard_15"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:layout_alignParentLeft="true"
+                android:text="2:20"/>
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignRight="@+id/time"
+                android:layout_marginLeft="@dimen/standard_8"
+                android:layout_marginRight="@dimen/standard_8"
+                />
+            <TextView
+                android:id="@+id/remaintime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/seekBar"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:text="2:20"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="4">
+            <ImageView
+                android:layout_width="@dimen/standard_55"
+                android:layout_height="@dimen/standard_55"
+                android:src="@drawable/ic_previous"/>
+            <ImageView
+                android:layout_width="@dimen/standard_75"
+                android:layout_height="@dimen/standard_75"
+                android:layout_marginLeft="@dimen/standard_25"
+                android:layout_marginRight="@dimen/standard_25"
+                android:src="@drawable/ic_play"/>
+
+            <ImageView
+                android:layout_width="@dimen/standard_55"
+                android:layout_height="@dimen/standard_55"
+                android:src="@drawable/ic_next"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/design_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_0"
+            android:layout_weight="2"
+            android:weightSum="5"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/standard_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="@dimen/standard_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="@dimen/standard_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="@dimen/standard_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="@dimen/standard_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

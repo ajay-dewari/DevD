@@ -70,7 +70,7 @@ public class HomeActivity extends AppCompatActivity
         setContentView(R.layout.activity_home);
         final Window window=getWindow();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);;
+        setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
         transparentBG = findViewById(R.id.transparentView);
         transparentBG.setOnClickListener(new View.OnClickListener() {
@@ -79,6 +79,7 @@ public class HomeActivity extends AppCompatActivity
                 closeFAB();
             }
         });
+
 /*===========This below code is used to make the view with the transparent image applied over it=========================*/
         /*final View content = findViewById(R.id.transparentView);
         if (content.getWidth() > 0) {

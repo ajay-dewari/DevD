@@ -1,6 +1,7 @@
 package com.ajaysinghdewari.devd.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -18,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ajaysinghdewari.devd.R;
+import com.ajaysinghdewari.devd.activities.SongPlayerActivity;
 import com.ajaysinghdewari.devd.models.Song;
 import com.ajaysinghdewari.devd.utils.CircleImageView;
 
@@ -49,7 +51,7 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder>{
         holder.mItem = songArrayList.get(position);
         holder.mSongTitleTV.setText(songArrayList.get(position).getTitle());
         holder.mArtistTV.setText(songArrayList.get(position).getArtist());
-        String thisArt = songArrayList.get(position).getImage();
+        final String thisArt = songArrayList.get(position).getImage();
         Bitmap bitmap;
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inSampleSize = 6;
@@ -68,6 +70,9 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder>{
             public void onClick(View v) {
                 holder.mFavourateBtn.animate().rotation(360);
                 holder.mFavourateBtn.setColorFilter(context.getResources().getColor(android.R.color.white), PorterDuff.Mode.SRC_IN);
+                Intent intent=new Intent(context, SongPlayerActivity.class);
+                intent.putExtra(SongPlayerActivity.IMG_BG,thisArt);
+                context.startActivity(intent);
             }
         });
     }
