@@ -22,6 +22,7 @@
             android:gravity="center_vertical">
 
             <ImageView
+                android:id="@+id/btn_back"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
@@ -108,6 +109,7 @@
                 android:layout_height="@dimen/standard_55"
                 android:src="@drawable/ic_previous"/>
             <ImageView
+                android:id="@+id/btn_play"
                 android:layout_width="@dimen/standard_75"
                 android:layout_height="@dimen/standard_75"
                 android:layout_marginLeft="@dimen/standard_25"
@@ -115,6 +117,7 @@
                 android:src="@drawable/ic_play"/>
 
             <ImageView
+                android:id="@+id/btn_next"
                 android:layout_width="@dimen/standard_55"
                 android:layout_height="@dimen/standard_55"
                 android:src="@drawable/ic_next"/>
@@ -131,6 +134,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/btn_repeat"
                 android:layout_width="@dimen/standard_0"
                 android:layout_height="match_parent"
                 android:padding="@dimen/standard_15"
@@ -138,6 +142,7 @@
                 android:src="@drawable/ic_repeat"/>
 
             <ImageView
+                android:id="@+id/btn_shuffle"
                 android:layout_width="@dimen/standard_0"
                 android:layout_height="match_parent"
                 android:padding="@dimen/standard_15"
@@ -145,6 +150,7 @@
                 android:src="@drawable/ic_shuffle"/>
 
             <ImageView
+                android:id="@+id/btn_favourate"
                 android:layout_width="@dimen/standard_0"
                 android:layout_height="match_parent"
                 android:padding="@dimen/standard_15"
@@ -152,6 +158,7 @@
                 android:src="@drawable/ic_favourate_white"/>
 
             <ImageView
+                android:id="@+id/btn_playlist_add"
                 android:layout_width="@dimen/standard_0"
                 android:layout_height="match_parent"
                 android:padding="@dimen/standard_15"
@@ -159,6 +166,7 @@
                 android:src="@drawable/ic_playlist_add"/>
 
             <ImageView
+                android:id="@+id/btn_queue_music"
                 android:layout_width="@dimen/standard_0"
                 android:layout_height="match_parent"
                 android:padding="@dimen/standard_15"
