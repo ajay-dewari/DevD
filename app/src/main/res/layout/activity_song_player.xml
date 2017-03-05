@@ -56,6 +56,7 @@
             android:layout_marginLeft="@dimen/standard_15"
             android:layout_marginRight="@dimen/standard_15"/>
 <com.ajaysinghdewari.devd.utils.CircleImageView
+    android:id="@+id/song_img"
     android:layout_width="wrap_content"
     android:layout_height="@dimen/standard_0"
     android:layout_weight="8"
@@ -115,6 +116,14 @@
                 android:layout_marginLeft="@dimen/standard_25"
                 android:layout_marginRight="@dimen/standard_25"
                 android:src="@drawable/ic_play"/>
+            <ImageView
+                android:id="@+id/btn_pause"
+                android:layout_width="@dimen/standard_75"
+                android:layout_height="@dimen/standard_75"
+                android:layout_marginLeft="@dimen/standard_25"
+                android:layout_marginRight="@dimen/standard_25"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone"/>
 
             <ImageView
                 android:id="@+id/btn_next"

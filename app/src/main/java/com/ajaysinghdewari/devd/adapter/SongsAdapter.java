@@ -52,6 +52,7 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder>{
         holder.mSongTitleTV.setText(songArrayList.get(position).getTitle());
         holder.mArtistTV.setText(songArrayList.get(position).getArtist());
         final String thisArt = songArrayList.get(position).getImage();
+        final long thisID = songArrayList.get(position).getId();
         Bitmap bitmap;
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inSampleSize = 6;
@@ -72,6 +73,7 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.ViewHolder>{
                 holder.mFavourateBtn.setColorFilter(context.getResources().getColor(android.R.color.white), PorterDuff.Mode.SRC_IN);
                 Intent intent=new Intent(context, SongPlayerActivity.class);
                 intent.putExtra(SongPlayerActivity.IMG_BG,thisArt);
+                intent.putExtra(SongPlayerActivity.IMG_ID,thisID);
                 context.startActivity(intent);
             }
         });
