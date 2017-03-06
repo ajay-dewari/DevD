@@ -50,4 +50,5 @@
     <dimen name="standard_190">190dp</dimen>
     <dimen name="standard_200">200dp</dimen>
     <dimen name="standard_225">225dp</dimen>
+    <dimen name="standard_300">300dp</dimen>
 </resources>

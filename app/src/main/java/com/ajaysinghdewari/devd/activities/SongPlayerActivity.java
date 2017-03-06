@@ -24,8 +24,8 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class SongPlayerActivity extends AppCompatActivity {
-    public static final String IMG_BG="inage_bg";
-    public static final String IMG_ID="inage_id";
+    public static final String IMG_BG="image_bg";
+    public static final String IMG_ID="image_id";
     String mBgUri="";
     long songID;
     SeekBar seekbar;
@@ -76,9 +76,12 @@ public class SongPlayerActivity extends AppCompatActivity {
             BitmapFactory.Options options = new BitmapFactory.Options();
             options.inSampleSize = 8;
 //            bitmap= BitmapFactory.decodeFile(mBgUri, options);
-            Bitmap bmImg = BitmapFactory.decodeFile(mBgUri, options);
+            Bitmap bmImg = BitmapFactory.decodeFile(mBgUri);
+            BitmapDrawable bitmapDrawable = new BitmapDrawable(getResources(), bmImg);
+            mSongImgView.setBackgroundDrawable(bitmapDrawable);
+            bmImg = BitmapFactory.decodeFile(mBgUri, options);
             BitmapDrawable background = new BitmapDrawable(bmImg);
-            mSongImgView.setImageBitmap(bmImg);
+
             content.setBackgroundDrawable(background);
 
 

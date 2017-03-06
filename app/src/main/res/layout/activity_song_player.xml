@@ -60,6 +60,8 @@
     android:layout_width="wrap_content"
     android:layout_height="@dimen/standard_0"
     android:layout_weight="8"
+    android:padding="@dimen/standard_40"
+    android:layout_gravity="center_horizontal"
     android:src="@drawable/wall_three"/>
 
         <RelativeLayout
